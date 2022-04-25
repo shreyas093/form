@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sign In</title>
+</head>
+<style>
+    .button1{background-color:rgb(255, 255, 255);
+   color:#13529fd0 ;
+   border: none;
+      height: 36px;
+      width: 150px;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-right: 20%;
+      font-weight: bold;
+   }
+   .button1:hover{
+    opacity: 0.8;
+   }
+   .button1:active{
+       opacity: 0.4;
+   }
+   .button2{
+       background-color: #13529fd0;
+       color: white;
+      border: none;
+      height: 36px;
+      width: 80px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight:bold;
+      font-size: 15px;
+      box-shadow:5px 5px 5px rgba(0, 0, 0,0.15);
+      transition: 0.15s;
+   }
+   .button2:hover{
+   background-color: rgb(27, 74, 125);
+   }
+   .button3{background-color:rgb(255, 255, 255);
+   color:#13529fd0 ;
+   border: none;
+      height: 36px;
+      width: 200px;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-right: 20%;
+      font-weight: bold;
+}
+.button3:hover{
+    background-color:aliceblue;
+}
+   .all{
+    border: 1px solid rgba(143, 137, 137, 0.708);
+    outline-width: thin;
+    width: 25%;
+    height: 50%;
+  padding: 20px;
+  margin: auto;
+  text-align:left;
+  vertical-align:left;
+   }
+.name{
+    display: inline-block;
+    white-space: pre;
+    text-decoration: rgb(47, 162, 238);
+    transform: perspective(blue);
+
+}
+.mail{display: inline-block;
+    white-space: pre;
+    text-decoration: rgb(47, 162, 238);
+    transform: perspective(blue);
+    }
+.pass{
+    display: inline-block;
+    white-space: pre;
+    }
+.show{
+    display: inline-block;
+    white-space: pre;
+    cursor: pointer;
+
+}
+.checkbox{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.15);
+}
+.checkbox:hover{
+    background-color: rgba(28, 25, 25, 0.944); 
+}
+
+p{
+    margin:0;
+  padding:0;
+  font-size:15px;
+  color: gray;
+}
+input :focus[type=text]
+{
+    
+    border: 2px rgb(95, 184, 244);
+  
+}
+ </style>
+<body>
+   <div class="all">
+       <span><img src="google.jpg" alt="Googleimg" width="30%"></span> 
+       <div class="head"> <h2>Create Your Google Account</h2></div>
+        
+        <form action="/action_page.php" >
+   <div class="name"> <input type="text" id="fname" name="fname" placeholder="firstname" required>                        <input type="text" id="lname" name="lname" placeholder="lastname" required> </div> <br>
+    <br>
+  <div class="mail"> <input type="email" id="email" name="email" placeholder="username" autocomplete="off" value=" @gmail" required><p><small>You can use letters, numbers or periods</small> </p></div> <br>
+<br>
+        <button class="button3">Use my current email instead</button><br>
+<br>
+
+   <div class="pass"> <input type="password" placeholder="password" required>                         <input type="password" placeholder="confirm" required><p><small>Use 8 or more characters with a mix of letters, numbers & symbols</small></p></div>
+    <br>
+    <br>
+  <div class="show">  <input type="checkbox" id="show" name="show">  <label for="show">Show password</label></div>
+    <br> <br>
+    <button class="button1">Sign in instead</button>                                              <button class="button2" formtarget="_blank">Next</button>     
+    </form>
+    
+</div>
+
+</body>
+<script>
+//firstName- camel case               -snakecase
+//rules 1 number se start nahi we can use number in middle or at last
+//only we can use $ and - ,no other special charaters
+//have no spaces between variables and number can not written with special charaters and single alphabet ka koi variable ni 
+// we cannot use varible with keywords like-- let function(function is a keyword)
+// it is case sensitive and always create meaningfull variable name 
+//all capital letters are used only when we use const
+function validateForm() {
+  let all = document.forms["fname"]["lname"]["email"]["password"].value;
+  if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}    
+
+
+
+</script>
+
+</html>
